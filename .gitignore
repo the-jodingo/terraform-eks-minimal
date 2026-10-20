@@ -1,0 +1,18 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.json
+.terraform/
+.terraform.lock.hcl
+
+# Ignore provider credentials
+.env
+*.cer
+*.key
+
+# Ignore build artifacts
+*.tfplan
+*.tfplan.lock.info
+
+# VCS
+.git

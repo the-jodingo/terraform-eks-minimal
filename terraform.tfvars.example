@@ -1,0 +1,19 @@
+# Example — copy to terraform.tfvars
+aws_region      = "us-west-2"
+environment     = "dev"
+app_name        = "myapp"
+owner           = "devops@company.com"
+
+cluster_name    = "myapp-eks"
+cluster_version = "1.29"
+
+node_group_name          = "default-node-group"
+node_group_desired_size  = 2
+node_group_min_size      = 1
+node_group_max_size      = 4
+node_instance_type       = "t3.medium"
+node_instance_ami        = ""  # e.g. "ami-0c55b133b20f596b2"
+
+common_tags = {
+  Department = "Platform"
+}
